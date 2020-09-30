@@ -9,24 +9,6 @@ var pool  = mysql.createPool({
     port            : mysqlConfig.port
 });
 
-// var connection = mysql.createConnection({
-//     host: "ec2-13-59-71-164.us-east-2.compute.amazonaws.com",
-//     user: "lea",
-//     password: "password",
-//     database: "Metrix",
-//     port: "3306"  
-// })
-//   console.log("connection : ", connection );
-
-//   connection.connect()
-  
-//   connection.query("SELECT * from users where email='lea.benero@gmail.com';", function (err, rows, fields) {
-//     if (err) throw err
-  
-//     console.log('The solution is: ', rows[0]);
-//     connection.end();
-
-//   })
   
 module.exports.queryHandler = async function(query){
     console.log("queryHandler");

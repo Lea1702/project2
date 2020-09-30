@@ -11,15 +11,6 @@ const uuid = require("uuid");
 function initialize () {
 }
 
-var connection = mysql.createConnection({
-    host : '13.59.71.164',
-    database: 'metrix',
-    user : 'root',
-    password : 'root',
-    port: 3306 
-   });
-
-
 
 router.post('/register', async function (req, res) {
     const { email, password } = req.body;
